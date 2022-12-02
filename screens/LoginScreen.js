@@ -45,7 +45,7 @@ export default class LoginScreen extends Component {
   }
 
   signIn = async (email, password) => {
-    /* write the code to authenticate user using email and password. */
+    /* Escribe el código para autnticar el usuario de correo electrónico y la contraseña.*/
 
 
 
@@ -63,20 +63,20 @@ export default class LoginScreen extends Component {
         <View style={styles.container}>
           <SafeAreaView style={styles.droidSafeArea} />
 
-          <Text style={styles.appTitleText}>Story Telling</Text>
+          <Text style={styles.appTitleText}>Contar historias</Text>
           <Image source={appIcon} style={styles.appIcon} />
 
           <TextInput
             style={styles.textinput}
             onChangeText={text => this.setState({ email: text })}
-            placeholder={"Enter Email"}
+            placeholder={"Ingresar correo electrónico"}
             placeholderTextColor={"#FFFFFF"}
             autoFocus
           />
           <TextInput
             style={[styles.textinput, { marginTop: 20 }]}
             onChangeText={text => this.setState({ password: text })}
-            placeholder={"Enter Password"}
+            placeholder={"Ingresar contraseña"}
             placeholderTextColor={"#FFFFFF"}
             secureTextEntry
           />
@@ -84,7 +84,7 @@ export default class LoginScreen extends Component {
             style={[styles.button, { marginTop: 20 }]}
             
           >
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>Iniciar sesión</Text>
           </TouchableOpacity>
           
         </View>
