@@ -52,34 +52,34 @@ export default class RegisterScreen extends Component {
         <View style={styles.container}>
           <SafeAreaView style={styles.droidSafeArea} />
 
-          <Text style={styles.appTitleText}>Register</Text>
+          <Text style={styles.appTitleText}>Registro</Text>
 
-          {/* Add code to create two more text inputs for first name and last name */}
+          {/* Agrega el código para crear dos entradas de teto más, para nombre y apellido.*/}
 
 
           <TextInput
             style={styles.textinput}
             onChangeText={text => this.setState({ email: text })}
-            placeholder={"Enter Email"}
+            placeholder={"ingresar correo electrónico"}
             placeholderTextColor={"#FFFFFF"}
 
           />
           <TextInput
             style={styles.textinput}
             onChangeText={text => this.setState({ password: text })}
-            placeholder={"Enter Password"}
+            placeholder={"Ingresar contraseña"}
             placeholderTextColor={"#FFFFFF"}
             secureTextEntry
           />
 
-          {/* Add code to create one more text input to confirm the password */}
+          {/* Agrega el código para crear una entrada de texto más, para confirmar la contraseña.*/}
 
 
           <TouchableOpacity
             style={[styles.button, { marginTop: 20 }]}
 
           >
-            <Text style={styles.buttonText}>Register</Text>
+            <Text style={styles.buttonText}>Registrarse</Text>
           </TouchableOpacity>
           
         </View>
